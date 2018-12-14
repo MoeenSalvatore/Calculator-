@@ -1,0 +1,32 @@
+number1_str = input(" First number: ")
+
+number1 = int(number1_str)
+# making the first number as a integer
+
+number2_str = input("Second number: ")
+number2 = int(number2_str)
+# making the secound number as a integer 
+
+operation = input("Operation [+, -, *, /]: ")
+
+if operation == "+":
+    combination = number1 + number2     # add up the numbers
+    
+elif operation == "-":              
+    combination = number1 - number2     # minus the numbers
+        
+elif operation == "*":
+    combination = number1 * number2     # multiply the number    
+    
+elif operation == "/":
+    if number2 == 0:        # numbers can not be divided by zero.
+        combination = "you can't divide by zero"
+    else:   
+        combination = number1 / number2     # devide the numbers 
+
+combination_str = str(combination)
+print("Answer: " + combination_str)
+
+
+print()
+input("Press return to continue ...")
